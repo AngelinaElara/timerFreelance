@@ -1,0 +1,18 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: #F3F4F5;
+
+  &__mail {
+    color: #6C6C6C;
+    font-size: 18px;
+    line-height: 140%;
+  }
+}
