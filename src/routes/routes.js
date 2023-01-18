@@ -15,10 +15,6 @@ export const useRoutes = (isAuth, role) => {
       <Routes>
         <Route 
           path='*' 
-          element={<Member/>} 
-        />
-        <Route 
-          path='/member' 
           element={<Form type='member'/>} 
         />
         <Route 
@@ -44,10 +40,6 @@ export const useRoutes = (isAuth, role) => {
       <Routes>
         <Route 
           path='*' 
-          element={<Teamlead/>} 
-        />
-        <Route 
-          path='/teamlead' 
           element={<Form type='teamlead'/>} 
         />
         <Route 

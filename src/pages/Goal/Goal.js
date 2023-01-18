@@ -24,11 +24,9 @@ const Goal = () => {
 
   const handleContinueBtnClick = () => {
     if (isTeamLeadActive) {
-      navigate('/teamlead')
       context.getRole('teamlead')
       window.location.reload()
     } else if (isMemberActive) {
-      navigate('/member')
       context.getRole('member')
       window.location.reload()
     }
