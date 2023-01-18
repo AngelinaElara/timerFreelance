@@ -75,10 +75,6 @@ export const useRoutes = (isAuth, role) => {
           path='*' 
           element={<Goal />} 
         />
-        <Route 
-          path='/goal' 
-          element={<Goal />} 
-        />
       </Routes>
     )
   }

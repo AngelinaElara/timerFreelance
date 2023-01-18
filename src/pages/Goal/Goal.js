@@ -15,21 +15,21 @@ const Goal = () => {
   const handleMemberBtnClick = () => {
     setIsTeamLeadActive(false)
     setisMemberActive(true)
-    context.getRole('member')
   }
 
   const handleTeamLeadBtnClick = () => {
     setIsTeamLeadActive(true)
     setisMemberActive(false)
-    context.getRole('teamlead')
   }
 
   const handleContinueBtnClick = () => {
     if (isTeamLeadActive) {
       navigate('/teamlead')
+      context.getRole('teamlead')
       window.location.reload()
     } else if (isMemberActive) {
       navigate('/member')
+      context.getRole('member')
       window.location.reload()
     }
   }

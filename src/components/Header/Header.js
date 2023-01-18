@@ -20,7 +20,6 @@ const Header = ({
       timer = setInterval(() => {
         if(newWindow.closed) {
           context.login(true)
-          navigate('/goal')
           window.location.reload()
           if (timer) clearInterval(timer)
         }
